@@ -11,6 +11,18 @@
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License" />
 </p>
 
+## 📚 Branch Navigator
+
+This repository uses targeted branches to host different phases of the educational material. Use the branch switcher to explore them:
+
+| Branch | Description | Contents |
+| :--- | :--- | :--- |
+| [**`main`**](https://github.com/Aditya948351/Kotlin-Projects-Docs/tree/main) | *Default* | Stable completed applications, snippet library, and core readmes. |
+| [**`Docs`**](https://github.com/Aditya948351/Kotlin-Projects-Docs/tree/Docs) | *Informative* | Deep-dives into Jetpack Compose concepts (`Basics.md`, `Introduction.md`, `Navigation.md`). |
+| [**`App-Snippets`**](https://github.com/Aditya948351/Kotlin-Projects-Docs/tree/App-Snippets) | *Component-level* | Partially built templates & code segments (`Codes/1_codefor_Img1.kt`). |
+| [**`Demo`**](https://github.com/Aditya948351/Kotlin-Projects-Docs/tree/Demo) | *Experimental* | Temporary workflows and sandbox layouts for active tests. |
+| [**`Videos`**](https://github.com/Aditya948351/Kotlin-Projects-Docs/tree/Videos) | *Visual Guide* | Application screen recordings and visual demonstrations. |
+
 ---
 
 ## 🌟 Repository Overview
@@ -45,20 +57,6 @@ The codebase is organized logically to separate simplicity, AI features, advance
 └── 📁 snippets               # Reusable production-grade Composable templates
     └── 📄 LoginScreen.kt     # High-end animated glassmorphism Login layout
 ```
-
----
-
-## 📚 Branch Navigator
-
-This repository uses targeted branches to host different phases of the educational material. Use the branch switcher to explore them:
-
-| Branch | Description | Contents |
-| :--- | :--- | :--- |
-| **`main`** | *Default* | Stable completed applications, snippet library, and core readmes. |
-| **`docs`** | *Informative* | Deep-dives into Jetpack Compose concepts (`Basics.md`, `Introduction.md`, `Navigation.md`). |
-| **`App-Snippets`** | *Component-level* | Partially built templates & code segments (`Codes/1_codefor_Img1.kt`). |
-| **`Demo`** | *Experimental* | Temporary workflows and sandbox layouts for active tests. |
-| **`Videos`** | *Visual Guide* | Application screen recordings and visual demonstrations. |
 
 ---
 
