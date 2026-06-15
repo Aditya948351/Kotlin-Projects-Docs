@@ -23,10 +23,14 @@ Whether you're a beginner wanting to understand network operations or an experie
 
 ## 📂 Repository Structure
 
-The codebase is organized logically to separate simplicity, AI features, advanced engineering, and standalone code snippets:
+The codebase is organized logically to separate simplicity, AI features, advanced engineering, local documentation, and standalone code snippets:
 
 ```text
 📁 Kotlin-Projects-Docs
+│
+├── 📁 documentation          # Merged Kotlin fundamentals & concepts guides
+│   ├── 📄 generics-objects-extensions.md
+│   └── 📄 collections-higher-order-functions.md
 │
 ├── 📁 simple-apps            # Beginner-friendly applications
 │   └── 📁 MarsPhotos         # Rest API photo viewer using Retrofit & Coil
@@ -127,6 +131,15 @@ Located under the [`snippets/`](./snippets) directory, [LoginScreen.kt](./snippe
 5.  **Clean Code Structure**: Ready to drop directly into your project with dynamic `TextFieldColors` overlays.
 
 *   **View Code**: [`snippets/LoginScreen.kt`](./snippets/LoginScreen.kt)
+
+---
+
+## 📖 Kotlin Fundamentals Documentation
+
+This repository includes detailed educational documentation covering core Kotlin concepts that power modern Android architectures:
+
+*   📘 **[Generics, Objects & Extensions](./documentation/generics-objects-extensions.md)**: Master generic type parameters, custom enum classes, data classes, singletons (using `object` and `companion object`), and class extension functions & properties.
+*   📙 **[Collections & Higher-Order Functions](./documentation/collections-higher-order-functions.md)**: Deep-dive into Kotlin arrays, lists, sets, and maps, as well as collection transformation functions such as `forEach`, `map`, `filter`, `groupBy`, `fold`, and `sortedBy`.
 
 ---
 
