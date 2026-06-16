@@ -19,7 +19,7 @@ This repository is organized into dedicated directories to easily explore differ
 | :--- | :--- | :--- |
 | [**`documentation`**](./documentation) | *Concepts & Fundamentals* | Kotlin fundamentals and Jetpack Compose deep-dives ([`Basics.md`](./documentation/Basics.md), [`Introduction.md`](./documentation/Introduction.md), [`Navigation.md`](./documentation/Navigation.md)). |
 | [**`snippets`**](./snippets) | *Component-level* | Standalone reusable Composable templates and layouts, including [`LoginScreen.kt`](./snippets/LoginScreen.kt) and custom [`app-snippets`](./snippets/app-snippets). |
-| [**`demo`**](./demo) | *Experimental* | Sandbox playground for active tests and temporary workflows. |
+| [**`experiments`**](./experiments) | *Experimental* | Sandbox playground for active tests and temporary workflows. |
 | [**`videos`**](./videos) | *Visual Guide* | Application screen recordings and visual demonstrations. |
 
 ---
@@ -50,7 +50,7 @@ The codebase is organized logically to separate simplicity, AI features, advance
 │       ├── 📁 StudySmart     # Complete study planner with stats & timers
 │       └── 📁 ToDoApp-JC     # Reactive local task management using Room Database
 │
-├── 📁 demo                   # Sandbox playground for active tests
+├── 📁 experiments            # Sandbox playground for active tests
 │
 ├── 📁 documentation          # Kotlin fundamentals & Jetpack Compose deep-dives
 │   ├── 📄 Basics.md
