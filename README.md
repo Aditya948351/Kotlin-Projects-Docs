@@ -11,17 +11,16 @@
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License" />
 </p>
 
-## 📚 Branch Navigator
+## 📚 Repository Navigator
 
-This repository uses targeted branches to host different phases of the educational material. Use the branch switcher to explore them:
+This repository is organized into dedicated directories to easily explore different resources and educational phases:
 
-| Branch | Description | Contents |
+| Folder | Description | Contents |
 | :--- | :--- | :--- |
-| [**`main`**](https://github.com/Aditya948351/Kotlin-Projects-Docs/tree/main) | *Default* | Stable completed applications, snippet library, and core readmes. |
-| [**`Docs`**](https://github.com/Aditya948351/Kotlin-Projects-Docs/tree/Docs) | *Informative* | Deep-dives into Jetpack Compose concepts (`Basics.md`, `Introduction.md`, `Navigation.md`). |
-| [**`App-Snippets`**](https://github.com/Aditya948351/Kotlin-Projects-Docs/tree/App-Snippets) | *Component-level* | Partially built templates & code segments (`Codes/1_codefor_Img1.kt`). |
-| [**`Demo`**](https://github.com/Aditya948351/Kotlin-Projects-Docs/tree/Demo) | *Experimental* | Temporary workflows and sandbox layouts for active tests. |
-| [**`Videos`**](https://github.com/Aditya948351/Kotlin-Projects-Docs/tree/Videos) | *Visual Guide* | Application screen recordings and visual demonstrations. |
+| [**`documentation`**](./documentation) | *Concepts & Fundamentals* | Kotlin fundamentals and Jetpack Compose deep-dives ([`Basics.md`](./documentation/Basics.md), [`Introduction.md`](./documentation/Introduction.md), [`Navigation.md`](./documentation/Navigation.md)). |
+| [**`snippets`**](./snippets) | *Component-level* | Standalone reusable Composable templates and layouts, including [`LoginScreen.kt`](./snippets/LoginScreen.kt) and custom [`app-snippets`](./snippets/app-snippets). |
+| [**`demo`**](./demo) | *Experimental* | Sandbox playground for active tests and temporary workflows. |
+| [**`videos`**](./videos) | *Visual Guide* | Application screen recordings and visual demonstrations. |
 
 ---
 
@@ -35,27 +34,37 @@ Whether you're a beginner wanting to understand network operations or an experie
 
 ## 📂 Repository Structure
 
-The codebase is organized logically to separate simplicity, AI features, advanced engineering, local documentation, and standalone code snippets:
+The codebase is organized logically to separate simplicity, AI features, advanced engineering, local documentation, videos, sandbox, and standalone code snippets:
 
 ```text
 📁 Kotlin-Projects-Docs
 │
-├── 📁 documentation          # Merged Kotlin fundamentals & concepts guides
+├── 📁 Completed-Apps         # Completed applications categorized by complexity
+│   ├── 📁 simple-apps        # Beginner-friendly applications
+│   │   └── 📁 MarsPhotos     # Rest API photo viewer using Retrofit & Coil
+│   │
+│   ├── 📁 mlkit-apps         # Machine Learning utilities
+│   │   └── 📁 TextExtractor  # OCR tool utilizing Google ML Kit Camera API
+│   │
+│   └── 📁 advanced-apps      # Advanced architectures (Room, MVI/MVVM, Flow)
+│       ├── 📁 StudySmart     # Complete study planner with stats & timers
+│       └── 📁 ToDoApp-JC     # Reactive local task management using Room Database
+│
+├── 📁 demo                   # Sandbox playground for active tests
+│
+├── 📁 documentation          # Kotlin fundamentals & Jetpack Compose deep-dives
+│   ├── 📄 Basics.md
+│   ├── 📄 Introduction.md
+│   ├── 📄 Navigation.md
 │   ├── 📄 generics-objects-extensions.md
 │   └── 📄 collections-higher-order-functions.md
 │
-├── 📁 simple-apps            # Beginner-friendly applications
-│   └── 📁 MarsPhotos         # Rest API photo viewer using Retrofit & Coil
+├── 📁 snippets               # Reusable production-grade Composable templates
+│   ├── 📄 LoginScreen.kt     # High-end animated glassmorphism Login layout
+│   └── 📁 app-snippets       # Extra app UI templates & snippets
+│       └── 📁 Codes          # Raw snippet codes (e.g., Welcome Screen)
 │
-├── 📁 mlkit-apps             # Machine Learning utilities
-│   └── 📁 TextExtractor      # OCR tool utilizing Google ML Kit Camera API
-│
-├── 📁 advanced-apps          # Advanced architectures (Room, MVI/MVVM, Flow)
-│   ├── 📁 StudySmart         # Complete study planner with customized stats & timers
-│   └── 📁 ToDoApp-JC         # Reactive local task management using Room Database
-│
-└── 📁 snippets               # Reusable production-grade Composable templates
-    └── 📄 LoginScreen.kt     # High-end animated glassmorphism Login layout
+└── 📁 videos                 # Visual walkthroughs & demo recordings
 ```
 
 ---
@@ -75,7 +84,7 @@ A clean, lightweight app displaying stunning photos of the Martian surface retri
     *   Leverages **Coil** for smooth image loading, error placeholders, and cache management.
     *   Utilizes the **Repository Pattern** to decouple networking from the UI layer.
     *   Graceful state management handling *Loading*, *Success*, and *Error* states with visual cues.
-*   **Path**: [`simple-apps/MarsPhotos`](./simple-apps/MarsPhotos)
+*   **Path**: [`Completed-Apps/simple-apps/MarsPhotos`](./Completed-Apps/simple-apps/MarsPhotos)
 
 </details>
 
@@ -89,7 +98,7 @@ An on-device OCR (Optical Character Recognition) application that extracts text 
     *   Integrates **Google ML Kit Text Recognition** for high-accuracy local processing.
     *   Features a custom-configured **CameraX** camera viewport for live-view scanning.
     *   Interactive OCR results card showing structured paragraphs with a fast Copy-to-Clipboard action.
-*   **Path**: [`mlkit-apps/TextExtractor`](./mlkit-apps/TextExtractor)
+*   **Path**: [`Completed-Apps/mlkit-apps/TextExtractor`](./Completed-Apps/mlkit-apps/TextExtractor)
 
 </details>
 
@@ -103,7 +112,7 @@ A sophisticated student planner designed to monitor study sessions, track dashbo
     *   Complex state handling using Kotlin **StateFlow** and asynchronous Coroutines.
     *   Custom theme configuration supporting dynamic Material 3 color variations and premium dark mode.
     *   Deep modular Jetpack Navigation hierarchy with safe arguments.
-*   **Path**: [`advanced-apps/StudySmart`](./advanced-apps/StudySmart)
+*   **Path**: [`Completed-Apps/advanced-apps/StudySmart`](./Completed-Apps/advanced-apps/StudySmart)
 
 ###  📝 ToDoApp-JC
 A fully offline task manager showcasing reactive programming and persistent state.
@@ -111,7 +120,7 @@ A fully offline task manager showcasing reactive programming and persistent stat
     *   Implements a local **Room Database** for offline-first architecture.
     *   Structured using a clean MVVM pattern.
     *   Interactive swipe-to-delete cards, task category filtering, and item prioritization.
-*   **Path**: [`advanced-apps/ToDoApp-JC`](./advanced-apps/ToDoApp-JC)
+*   **Path**: [`Completed-Apps/advanced-apps/ToDoApp-JC`](./Completed-Apps/advanced-apps/ToDoApp-JC)
 
 </details>
 
@@ -132,10 +141,16 @@ Located under the [`snippets/`](./snippets) directory, [LoginScreen.kt](./snippe
 
 ---
 
-## 📖 Kotlin Fundamentals Documentation
+## 📖 Kotlin & Compose Documentation
 
-This repository includes detailed educational documentation covering core Kotlin concepts that power modern Android architectures:
+This repository includes detailed educational documentation covering Kotlin fundamentals and Jetpack Compose concepts:
 
+### 📱 Jetpack Compose Concepts
+*   ✨ **[Compose Basics](./documentation/Basics.md)**: Get started with the basic concepts of Jetpack Compose.
+*   🚀 **[Compose Introduction](./documentation/Introduction.md)**: A complete introduction to Compose development paradigms.
+*   🗺️ **[Compose Navigation](./documentation/Navigation.md)**: Learn how to manage navigation and backstack in Compose.
+
+### ☕ Kotlin Fundamentals
 *   📘 **[Generics, Objects & Extensions](./documentation/generics-objects-extensions.md)**: Master generic type parameters, custom enum classes, data classes, singletons (using `object` and `companion object`), and class extension functions & properties.
 *   📙 **[Collections & Higher-Order Functions](./documentation/collections-higher-order-functions.md)**: Deep-dive into Kotlin arrays, lists, sets, and maps, as well as collection transformation functions such as `forEach`, `map`, `filter`, `groupBy`, `fold`, and `sortedBy`.
 
@@ -152,9 +167,17 @@ cd Kotlin-Projects-Docs
 ```
 
 ### 2️⃣ Open in Android Studio
+
+We have provided double-clickable Windows Batch shortcut scripts in the root directory to open any project in Android Studio automatically:
+-   🚀 **[Launch_MarsPhotos.bat](./Launch_MarsPhotos.bat)**: Open the MarsPhotos project.
+-   🚀 **[Launch_TextExtractor.bat](./Launch_TextExtractor.bat)**: Open the TextExtractor project.
+-   🚀 **[Launch_StudySmart.bat](./Launch_StudySmart.bat)**: Open the StudySmart project.
+-   🚀 **[Launch_ToDoApp.bat](./Launch_ToDoApp.bat)**: Open the ToDoApp-JC project.
+
+*Alternatively, if you are not on Windows or want to open them manually:*
 1.  Launch **Android Studio** (Koala or newer recommended).
 2.  Select **Open...**
-3.  Navigate to the repository folder and select any sub-folder containing a project (e.g., `advanced-apps/StudySmart`).
+3.  Navigate to the repository folder and select any sub-folder containing a project (e.g., `Completed-Apps/advanced-apps/StudySmart`).
 4.  Wait for the Gradle Sync to complete successfully.
 
 ### 3️⃣ Run on Device
